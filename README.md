@@ -7,9 +7,23 @@
 ### - 201807169 Erick Abdul Chacón Barillas 3508630320101@ingenieria.usac.edu.gt
 ### - 202000896 Javier Alejandro Matías Guarcas 3681430070101@ingenieria.usac.edu.gt
 
+
+
 ## Análisis describiendo las reglas de normalización aplicadas al archivo de excel
 
+Para este caso se implemento la segunda forma normal (2NF) y consiste en lo siguiente:
 
+### Estar en Primera Forma Normal (1NF):
+
+- Para estar en 1NF, una tabla debe contener solo valores atómicos (sin listas ni repeticiones), y cada fila debe ser única.
+
+### Elimina dependencias parciales:
+
+- Una dependencia parcial ocurre cuando un atributo no clave depende solo de parte de la clave primaria, en lugar de depender de toda la clave.
+
+- Este problema es común en tablas con claves primarias compuestas.
+
+- Para cumplir con la 2NF, los atributos que dependen parcialmente de la clave primaria se deben mover a una tabla separada, manteniendo solo las dependencias completas en la tabla original.
 
 
 
