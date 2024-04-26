@@ -9,7 +9,7 @@
 
 ## Análisis describiendo las reglas de normalización aplicadas al archivo de excel
 
-### (aqui va el analisis de la normalizacion)
+
 
 
 
@@ -71,7 +71,11 @@ TABLA_ETNIA
 
 ## Pasos que se siguieron para aplicar las reglas de normalización
 
-### (aqui van los pasos de la normalizacion)
+1. Se eliminó la columna de "sexo" y "etnia" debido a que estaban duplicadas. Solo se dejó una de ellas
+2. Se creó la tabla etnia con id autoincrementable
+3. Se creó la tabla lugares que contiene la información de los lugares
+4. Se creó la tabla eleccion con información de los partidos
+5. De último se creó la tabla caracterítica que contiene información macro de los votantes.
 
 ## Modelo conceptual
 
