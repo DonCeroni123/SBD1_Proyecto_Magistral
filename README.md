@@ -1,2 +1,3 @@
 # SBD1_Proyecto_Magistral
-elecciones
+PROYECTO ELECCIONES
+Jose Pablo Ceron Urizar - 201908251
