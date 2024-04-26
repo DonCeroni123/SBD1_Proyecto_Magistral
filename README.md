@@ -1,3 +1,4 @@
 # SBD1_Proyecto_Magistral
-PROYECTO ELECCIONES
-Jose Pablo Ceron Urizar - 201908251
+## PROYECTO ELECCIONES
+### Nombre: Jose Pablo Ceron Urizar
+### Carnet: 201908251
