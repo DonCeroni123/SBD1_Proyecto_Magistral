@@ -93,7 +93,36 @@ TABLA_ETNIA
 
 ## Modelo conceptual
 
-### (aqui va la imagen y su explicacion)
+<a href="#">
+<img src="./capturas/conceptual.png"/>
+</a>
+
+### Aqui mostraremos detalles de lo que consiste en este diagrama conceptual
+
+### 1. Entidad Lugar:
+- Atributos: `id_lugar`, `pais`, `region`, `depto`, `municipio`, `id_eleccion`, `id_caracteristica`.
+
+- Relaciones: 
+    - Un lugar está asociado a una única elección (uno a uno con `TABLA_ELECCION`).
+    - Un lugar puede tener múltiples características asociadas (uno a muchos con `TABLA_CARACTERISTICA`).
+
+### 2. Entidad Elección:
+- Atributos: `id_eleccion`, `nombre_eleccion`, `ano_eleccion`, `partido`, `nombre_partido`.
+- Relaciones:
+    - Una elección puede estar relacionada con múltiples lugares (uno a muchos con `TABLA_LUGARES`).
+
+### 3. Entidad Característica:
+- Atributos: `id_caracteristica`, `id_etnia`, `analfabetos`, `alfabetos`, `primaria`, `nivel_medio`, `universitarios`.
+
+- Relaciones:
+    - Una característica pertenece a un único lugar (uno a uno con `TABLA_LUGARES`).
+    - Una característica puede tener múltiples etnias asociadas (uno a muchos con `TABLA_ETNIA`).
+
+### 4. Entidad Etnia:
+- Atributos: `id_etnia`, `sexo`, `raza`.
+
+- Relaciones:
+    - Una etnia puede estar asociada a múltiples características (uno a muchos con `TABLA_CARACTERISTICA`).
 
 ---
 ---
