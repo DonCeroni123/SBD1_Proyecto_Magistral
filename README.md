@@ -95,10 +95,41 @@ TABLA_ETNIA
 
 ### (aqui va la imagen y su explicacion)
 
+---
+---
+---
 ## Modelo logico
 
-### (aqui va la imagen y su explicacion)
+<a href="#">
+<img src="./capturas/modelo_logico.png"/>
+</a>
+
+### Este diagrama a grandes rasgos maneja acerca del funcionamiento de un sistema político la cual es una herramienta muy util para comprender en como funciona el gobierno.
+
+### Los elementos adicionales que conlleva este diagrama es el siguiente:
+
+- Lugares: Son las unidades territoriales en las que se organiza el sistema politico. Los lugares pueden ser paises, regiones, departamentos o municipios
+
+- Elecciones: Son los procesos mediante los cuales los ciudadanos eligen a sus representantes. Las elecciones pueden ser locales, regionales o naciones.
+
+- Partidos Políticos: Son las organizaciones que agrupan a los ciudadanos que comparten una ideología politica común. Los partidos politicos compiten en las elecciones para obtener representacion en el gobierno
+
+- Etnias: Son los grupos de personas que comparten una cultura e identidad comunes. Las etnias pueden estar representadas en el sistema político a través de partidos politicos, grupos de interés u organizaciones no gubernamentales.
+
+---
+---
+---
 
 ## Modelo entidad-relacion
 
-### (aqui va la imagen y su explicacion)
+<a href="#">
+<img src="./capturas/fisico.png"/>
+</a>
+
+### El diagrama del sistema político muestra una seria de relaciones entre los diferentes elementos. Las principales relaciones son las siguientes:
+
+- Entidad Lugares y Entidad Eleccion: Cada registro en la tabla `TABLA_LUGARES` tiene una relacion con un registro en la tabla `TABLA_ELECCION`, ya que `id_eleccion` en `TABLA_LUGARES` es una clave externa que hace referencia a `id_eleccion` en `TABLA_ELECCION`. Esto implica que un lugar puede estar asociado a una única elección pero una elección puede estar relacionada con múltiples lugares.
+
+- Entidad Lugares y Entidad Caracteristica: Hay una relacion entre `TABLA_LUGARES` y `TABLA_CARACTERISTICA`. La clave externa `id_caracteristica` en `TABLA_LUGARES` se refiere a `id_caracteristica` en `TABLA_CARACTERISTICA`. Esto significa que un lugar puede tener múltiples características asociadas, pero una característica solo pertenece a un lugar.
+
+- Entidad Caracterisitca y Tabla Etnia: Igualmente, hay una relación de uno a muchos entre `TABLA_CARACTERISTICA` y `TABLA_ETNIA`. La clave externa `id_etnia` en `TABLA_CARACTERISTICA` se refiere a `id_etnia` en `TABLA_ETNIA`. Esto indica que una característica puede tener múltiples etnias asociadas, pero una etnia pertenece a una sola característica.
